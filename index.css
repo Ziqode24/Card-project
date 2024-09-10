@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+        circle at 24.1% 68.8%,
+        rgb(50, 50, 50) 0%,
+        rgb(0, 0, 0) 99.4%
+    );
+    font-family: "SUSE";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+  height: 65%;
+  width: 75%;
+  /* background-color: #ffffff16; */
+  background: linear-gradient(-109.6deg, rgb(31,1,66) 13.4%, rgb(75,0,54) 100.2%);
+  border-radius: 5px;
+  
+  
+  display: flex;
+  justify-content: space-between;
+  transition: all  0.6s linear;
+}
+
+.rightBox img{
+  height: 100%;
+  border-end-end-radius: 5px;
+  border-top-right-radius: 5px;
+  /* width: 45%; */
+}
+
+.leftBox{
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.leftBox #content{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 65px;
+  /* border: 1px solid white; */
+  /* text-align: center; */
+  padding: 0 50px;
+  padding-top: 40px;
+  
+}
+
+#content h2{
+  color: white;
+  font-family: "Unbounded";
+  font-size: 28px;
+}
+
+#content p{
+  color: whitesmoke;
+  font-family: "urbanist";
+  letter-spacing: 0.79px;
+}
+
+.leftBox #stats{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: space-around;
+  color: floralwhite;
+}
+
+#stats h2{
+  font-family: "Unbounded";
+  font-size: 24px;
+}
+
+#stats p{
+  font-family: urbanist;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  
+}
+
+#user,#views,#comment{
+  transition: all 0.6s linear;
+}
+#user:hover{
+  color: rgb(140,208,223);
+  /* transform: scale(1.05); */
+}
+#views:hover{
+  color: rgb(223,185,140);
+  /* transform: scale(1.05); */
+}
+#comment:hover{
+  color: rgb(140,223,145);
+  /* transform: scale(1.05); */
+}
